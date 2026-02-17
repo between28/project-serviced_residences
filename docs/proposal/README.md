@@ -1,9 +1,7 @@
-﻿# Proposal Docs
+# Proposal Docs (Legacy Pointer)
 
-Canonical proposal files currently remain at repository root for active editing:
+Canonical proposal files are now managed in:
+- `docs/dissertation/proposal/proposal.md`
+- `docs/dissertation/proposal/proposal_detail.md`
 
-- `proposal.md`
-- `proposal_detail.md`
-- `dissertation_summary-chaehoonlee.pdf`
-
-When the structure is stabilized, these can be moved into this folder.
+Local PDF summaries should remain untracked.

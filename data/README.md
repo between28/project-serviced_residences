@@ -1,9 +1,10 @@
-﻿# Data Directory
+# Data Directory
 
-- `raw/`: source datasets (not cleaned)
-- `interim/`: temporary linked/cleaned outputs
-- `processed/`: analysis-ready datasets
+- `raw/`: original source datasets (never manually edited)
+- `interim/`: cleaned and linked intermediate files
+- `processed/`: analysis-ready panels and feature tables
 
-Recommended rule:
-- Keep large raw files out of git where possible.
-- Keep schema snapshots and small metadata in git.
+## Rules
+- Keep large raw files out of Git where possible.
+- Keep schemas, codebooks, and tiny metadata snapshots in Git.
+- Build `processed/` using scripts from `src/` only.

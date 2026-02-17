@@ -1,6 +1,5 @@
-﻿# Data Docs
+# Data Docs (Legacy Pointer)
 
-- `../../Detailed Data Table.md`
-- `../../Variable Definitions.md`
-
-These root files are currently the active versions.
+Canonical data design documents are now managed in:
+- `docs/dissertation/data/variable_definitions.md`
+- `docs/dissertation/data/detailed_data_table.md`

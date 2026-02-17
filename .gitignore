@@ -208,10 +208,12 @@ __marimo__/
 
 # Project data and outputs
 data/raw/**/*
+!data/raw/**/
 !data/raw/**/.gitkeep
 data/interim/**/*
 !data/interim/.gitkeep
 outputs/**/*
+!outputs/**/
 !outputs/**/.gitkeep
 !outputs/README.md
 
@@ -220,3 +222,17 @@ references/**/*.pdf
 
 # Local dissertation summary PDF (do not track)
 dissertation_summary-*.pdf
+
+# Thesis writing build artifacts
+paper/build/
+paper/**/*.aux
+paper/**/*.bbl
+paper/**/*.bcf
+paper/**/*.blg
+paper/**/*.fdb_latexmk
+paper/**/*.fls
+paper/**/*.log
+paper/**/*.out
+paper/**/*.run.xml
+paper/**/*.synctex.gz
+paper/**/*.toc

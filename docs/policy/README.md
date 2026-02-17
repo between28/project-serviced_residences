@@ -1,5 +1,6 @@
-﻿# Policy Docs
+# Policy Docs (Legacy Pointer)
 
-- `housing_policy_timeline.csv`: timeline template for LTV/DTI/reg-area events
-- `sr_policy_timeline.csv`: timeline template for serviced-residence-specific events
-- `policy_codebook.md`: coding rules and definitions
+Canonical policy documents are now managed in:
+- `docs/dissertation/policy/housing_policy_timeline.csv`
+- `docs/dissertation/policy/sr_policy_timeline.csv`
+- `docs/dissertation/policy/policy_codebook.md`
