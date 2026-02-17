@@ -217,3 +217,6 @@ outputs/**/*
 
 # Reference library PDFs (local only)
 references/**/*.pdf
+
+# Local dissertation summary PDF (do not track)
+dissertation_summary-*.pdf
