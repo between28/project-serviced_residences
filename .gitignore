@@ -214,3 +214,6 @@ data/interim/**/*
 outputs/**/*
 !outputs/**/.gitkeep
 !outputs/README.md
+
+# Reference library PDFs (local only)
+references/**/*.pdf
