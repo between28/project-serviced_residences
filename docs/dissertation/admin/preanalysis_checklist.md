@@ -1,5 +1,12 @@
 # Pre-analysis Checklist (Draft v1)
 
+## Status Update (2026-02-18)
+- [x] Data receipt and coverage check completed for core datasets (`building_register`, `building_permit`, `housing_permit`).
+- [x] File existence and size checks completed via `scripts/10_data_download_checklist.ps1`.
+- [x] Raw schema/date-like field checks completed via `scripts/11_building_register_intake_validate.ps1` and `scripts/12_permit_intake_validate.ps1`.
+- [x] Core-column missing check completed on sample (`5000` rows per file) via `scripts/13_extract_core_columns.ps1 -MaxRowsPerFile 5000`.
+- [ ] Full-file core extraction (`-MaxRowsPerFile 0`) pending due runtime (run overnight if needed).
+
 ## 1. Scope Freeze
 - Confirm four RQs are final (RQ1-RQ4).
 - Confirm analysis units are final: `sigungu-month` (permit/substitution), `building-month` (start/completion).
