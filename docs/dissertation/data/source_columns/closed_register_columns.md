@@ -1,0 +1,37 @@
+﻿# 폐쇄말소대장 원천 컬럼 정의
+
+## 폐쇄말소대장 전유부
+
+```text
+컬럼한글명	데이터타입	비고
+관리_폐쇄말소대장_PK	VARCHAR(33)	
+폐쇄말소_구분_코드	VARCHAR(2)	
+폐쇄말소_구분_코드_명	VARCHAR(100)	
+폐쇄말소_일	VARCHAR(8)	
+대장_구분_코드	VARCHAR(1)	
+대장_구분_코드_명	VARCHAR(100)	
+대장_종류_코드	VARCHAR(1)	
+대장_종류_코드_명	VARCHAR(100)	
+대지_위치	VARCHAR(500)	
+도로명_대지_위치	VARCHAR(400)	
+건물_명	VARCHAR(100)	
+시군구_코드	VARCHAR(5)	
+법정동_코드	VARCHAR(5)	
+대지_구분_코드	VARCHAR(1)	
+번	VARCHAR(4)	
+지	VARCHAR(4)	
+특수지_명	VARCHAR(200)	
+블록	VARCHAR(20)	
+로트	VARCHAR(20)	
+새주소_도로_코드	VARCHAR(12)	
+새주소_법정동_코드	VARCHAR(5)	
+새주소_지상지하_코드	VARCHAR(1)	
+새주소_본_번	NUMERIC(5)	
+새주소_부_번	NUMERIC(5)	
+동_명	VARCHAR(100)	
+호_명	VARCHAR(100)	
+층_구분_코드	VARCHAR(2)	
+층_구분_코드_명	VARCHAR(100)	
+층_번호	NUMERIC(4)	
+생성_일자	VARCHAR(8)	
+```

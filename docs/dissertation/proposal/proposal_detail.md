@@ -3,7 +3,7 @@
 
 ## 1. Motivation and Scope
 
-This project examines a boundary category problem in urban regulation. In South Korea, serviced residences are legally classified as accommodation, but in practice some projects are developed, sold, and occupied in housing-like ways. The core claim is that policy and market pressure can reallocate supply across legal categories rather than simply reduce total supply.
+This project examines a boundary category problem in urban regulation. In South Korea, serviced residences are legally classified as accommodation, but in practice some projects are developed, sold, and occupied in housing-like ways. The core claim is that policy and market pressure can reallocate supply across legal categories rather than simply reduce total supply (Glaeser et al., 2008; Hsieh and Moretti, 2015).
 
 The empirical scope covers:
 
@@ -49,7 +49,7 @@ Policy shocks are coded in two families:
 - Broad housing policy shocks (for example LTV/DTI changes, regulated area updates)
 - Serviced-residence-specific policy shocks
 
-Main models use policy event dummies and event-time terms. Composite intensity indices are used only in robustness checks.
+Main models use policy event dummies and event-time terms, consistent with macroprudential policy evidence and Korean institutional findings (Kuttner and Shim, 2013; Jung and Lee, 2016). Composite intensity indices are used only in robustness checks.
 
 ## 4. Data Design
 
@@ -123,6 +123,8 @@ Base specification:
 - Housing market pressure controls
 - Macro controls
 
+Economic interpretation focuses on supply-constraint and allocation channels (Glaeser et al., 2008; Hsieh and Moretti, 2015).
+
 ### Stage B. RQ2: Residentialisation Model (Building Level)
 
 Outcomes:
@@ -142,6 +144,10 @@ Event-study model with policy-family separation:
 
 - Housing policy events
 - Serviced-residence events
+
+Estimator rule:
+
+- Use staggered-treatment-robust dynamic DID estimators in the main/robustness set (Callaway and Sant'Anna, 2018; Sun and Abraham, 2018).
 
 #### C2. Start and Completion Effects (`building-month`)
 
@@ -165,6 +171,7 @@ Outcomes:
 - Excluding overlapping policy months
 - Composite intensity index specifications (robustness only)
 - Linkage quality diagnostics and sensitivity to unmatched observations
+- Cross-estimator comparison for dynamic treatment effects (Callaway and Sant'Anna, 2018; Sun and Abraham, 2018)
 
 ## 8. Risks and Mitigation
 
@@ -215,3 +222,12 @@ Mitigation:
 - Main regression tables for RQ1-RQ4
 - Robustness appendix (including intensity index models)
 - Final dissertation chapters and reproducible scripts
+
+## 11. Core References (6-paper set)
+
+- Callaway, Brantly, and Pedro H. C. Sant'Anna (2018). Difference-in-Differences with Multiple Time Periods. https://arxiv.org/pdf/1803.09015.pdf
+- Glaeser, Edward L., Joseph Gyourko, and Albert Saiz (2008). Housing Supply and Housing Bubbles. https://www.nber.org/system/files/working_papers/w14193/w14193.pdf
+- Hsieh, Chang-Tai, and Enrico Moretti (2015). Housing Constraints and Spatial Misallocation. https://www.nber.org/system/files/working_papers/w21154/w21154.pdf
+- Jung, Hosung, and Jieun Lee (2016). The Effects of Macro-prudential Policies on House Prices Using Real Transaction Data: Evidence from Korea. https://www.bok.or.kr/fileSrc/imerEng/56d07b1e2d804cdd84a2a80d28aca232/1/FILE_201803300854535991.pdf
+- Kuttner, Kenneth N., and Ilhyock Shim (2013). Can non-interest rate policies stabilise housing markets? https://www.bis.org/publ/work433.pdf
+- Sun, Liyang, and Sarah Abraham (2018). Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects. https://arxiv.org/pdf/1804.05785.pdf

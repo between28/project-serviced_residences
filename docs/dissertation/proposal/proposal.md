@@ -36,7 +36,7 @@ This case is treated as a broader supply-allocation problem:
 
 > When formal housing channels are constrained by regulation or market pressure, development may shift into adjacent legal categories.
 
-The project tests whether policy and market pressure change the timing and composition of supply across categories.
+The project tests whether policy and market pressure change the timing and composition of supply across categories. This framing follows the housing supply constraint and spatial misallocation literature (Glaeser et al., 2008; Hsieh and Moretti, 2015).
 
 ---
 
@@ -69,7 +69,7 @@ The policy environment has changed multiple times through:
 - Broad housing policy interventions (for example LTV and DTI tightening, regulated area designation changes).
 - Serviced-residence-specific interventions (illegal residential use controls, grace periods, conversion support).
 
-This research estimates how those policy layers changed development behavior.
+This research estimates how those policy layers changed development behavior, consistent with macroprudential housing-policy evidence (Kuttner and Shim, 2013; Jung and Lee, 2016).
 
 ---
 
@@ -189,6 +189,8 @@ Approach:
 - Count model or linear panel with `sigungu` and month fixed effects
 - Controls for local demand and macro conditions
 
+Interpretation is anchored in the supply-constraint channel documented in prior research (Glaeser et al., 2008; Hsieh and Moretti, 2015).
+
 ## Stage 2: RQ2 Residentialisation Model
 
 Outcome:
@@ -209,6 +211,7 @@ Output:
 
 - Event-study style policy dummies in `sigungu-month` panel
 - Separate housing policy effects from serviced-residence policy effects
+- Estimation with staggered-treatment-robust event-study DID estimators (Callaway and Sant'Anna, 2018; Sun and Abraham, 2018)
 
 ### 3B. Start and Completion Pipeline (Building-Month)
 
@@ -344,10 +347,11 @@ Month 7: Writing, revisions, and appendix finalization
 
 # 12. References
 
-(To be finalized)
+Core reference set for this proposal draft (6 papers):
 
-- Government policy documents on serviced residences
-- Housing policy announcements (LTV/DTI and regulated areas)
-- Literature on housing supply elasticity and policy transmission
-- Literature on regulatory arbitrage in urban markets
-- Literature on adjacent-category substitution (officetel and similar types)
+- Callaway, Brantly, and Pedro H. C. Sant'Anna (2018). Difference-in-Differences with Multiple Time Periods. https://arxiv.org/pdf/1803.09015.pdf
+- Glaeser, Edward L., Joseph Gyourko, and Albert Saiz (2008). Housing Supply and Housing Bubbles. https://www.nber.org/system/files/working_papers/w14193/w14193.pdf
+- Hsieh, Chang-Tai, and Enrico Moretti (2015). Housing Constraints and Spatial Misallocation. https://www.nber.org/system/files/working_papers/w21154/w21154.pdf
+- Jung, Hosung, and Jieun Lee (2016). The Effects of Macro-prudential Policies on House Prices Using Real Transaction Data: Evidence from Korea. https://www.bok.or.kr/fileSrc/imerEng/56d07b1e2d804cdd84a2a80d28aca232/1/FILE_201803300854535991.pdf
+- Kuttner, Kenneth N., and Ilhyock Shim (2013). Can non-interest rate policies stabilise housing markets? https://www.bis.org/publ/work433.pdf
+- Sun, Liyang, and Sarah Abraham (2018). Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects. https://arxiv.org/pdf/1804.05785.pdf
